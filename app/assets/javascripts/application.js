@@ -20,3 +20,5 @@
 //= require welcome
 //= require effects
 //= require inventory
+//= require probability
+//= require next_turn

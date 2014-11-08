@@ -1,9 +1,10 @@
 .game-container
-  / %section.section.header-intro
-  /   %h1{ data: {shadow_text: "Space Trail" } } Space Trail
-  /   %p (Very) Loosely based on the original Oregon trail
-  /   .planet
-  /     %div
+  %section.section.header-intro
+    = render partial: 'dashboard'
+    %h1{ data: {shadow_text: "Space Trail" } } Space Trail
+    %p (Very) Loosely based on the original Oregon trail
+    .planet
+      %div
   %section.section.planet-table
     = render "planet_v1"
   - @events.each_with_index do | event, i |
