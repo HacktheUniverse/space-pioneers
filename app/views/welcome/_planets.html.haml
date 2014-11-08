@@ -1,0 +1,17 @@
+%table
+  %thead
+    %tr
+      %td Name
+      %td Planetary Class
+      %td Habitable Class
+      %td Distance from Earth in Light-Years
+      %td Earth Similarity Index (Earth is 1.0)
+
+  %tbody
+    - Planet.all.each do |planet|
+      %tr
+        %td= planet.name
+        %td= planet.planet_class
+        %td= planet.habitable_class
+        %td= planet.ly_distance
+        %td= planet.esi
