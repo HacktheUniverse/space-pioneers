@@ -1,7 +1,7 @@
 space-trail
 ===========
 
-[http://54.173.137.134/](http://54.173.137.134/)
+[http://damp-chamber-4364.herokuapp.com/](http://damp-chamber-4364.herokuapp.com/)
 
 ### Description
 Space Trail is like Oregon Trail... but in space.
