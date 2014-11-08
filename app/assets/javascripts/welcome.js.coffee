@@ -17,11 +17,20 @@ $(".choice").fitText(2.0)
 # @_spacepioneer #4 #b
 # @_spacepioneer #4 #a
 # Calling getChoices(4) will return the third tweet because it is the most recent matching the question 4 hashtag
-window.getChoices = (event_id) ->
+window.getChoice = (event_id) ->
   $.get "/choices/#{event_id}", (choice) ->
-    console.log choice
 
-# We need a method that will move scroll down to the next question (instead of scrolling using mouse scroll)
-# That method should be called in the getChoices callback function after we
-# resolve the choice and give the players time to respond to the consequences
-# of the choice
+    # Execute the function for the corresponding choice
+    window.chooseEffect(choice.choice)
+
+    window.updateConditions()
+
+    setTimeout (->
+      window.nextTurn()
+    ), 5000
+
+    # TODO: put in user handle
+    console.log choice.handle
+
+window.updateConditions = ->
+  # TODO: update the dom with new conditions / inventory
