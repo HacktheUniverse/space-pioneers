@@ -4,5 +4,5 @@
 
 console.log "hello?"
 $(".game-container").fullpage()
-$(".question").fitText(1.2)
-$(".choice").fitText(0.8)
+$(".question").fitText(4.2)
+$(".choice").fitText(3.0)

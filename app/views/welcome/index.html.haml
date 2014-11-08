@@ -2,12 +2,13 @@
   %h1 Space Trail
   %p Loosely based on the original Oregon trail
 .game-container
-  - (1...5).each do | i |
+  - @events.each do | i |
     %section.section.q-1
       .question
-        #{i}) Who is the thing of this thing thing?
+        #{i.body}
       .answer-box
         .choice.choice-a.is-selected
-          Choose this
+          #{i.choice_1}
         .choice.choice-b
-          Choose that
+          #{i.choice_2}
+          
