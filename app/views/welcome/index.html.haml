@@ -1,2 +1,13 @@
-%h1 Welcome#index
-%p Find me in app/views/welcome/index.html.haml
+%header.intro
+  %h1 Space Trail
+  %p Loosely based on the original Oregon trail
+.game-container
+  - (1...5).each do | i |
+    %section.section.q-1
+      .question
+        #{i}) Who is the thing of this thing thing?
+      .answer-box
+        .choice.choice-a
+          Choose this
+        .choice.choice-b
+          Choose that

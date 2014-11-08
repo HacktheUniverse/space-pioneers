@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require fittext
+//= require jquery.fullpage
+//= require jquery.easing
+//= require welcome
