@@ -6,3 +6,19 @@ console.log "hello?"
 $(".game-container").fullpage()
 $(".question").fitText(4.2)
 $(".choice").fitText(3.0)
+
+# Call this method passing in an event id, and it will the most recent
+# tweet directed at @_spacepioneer that has a hashtag corresponding to the event.
+# For example, say there are the following tweets created:
+# @_spacepioneer #3 #a
+# @_spacepioneer #4 #b
+# @_spacepioneer #4 #a
+# Calling getChoices(4) will return the third tweet because it is the most recent matching the question 4 hashtag
+window.getChoices = (event_id) ->
+  $.get "/choices/#{event_id}", (choice) ->
+    console.log choice
+
+# We need a method that will move scroll down to the next question (instead of scrolling using mouse scroll)
+# That method should be called in the getChoices callback function after we
+# resolve the choice and give the players time to respond to the consequences
+# of the choice
