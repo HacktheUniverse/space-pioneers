@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans:700italic,800');
+@import url('http://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans:300,400,700italic,800');
 @import "compass";
 
 $opensans: 'Open Sans';
@@ -45,6 +45,7 @@ p {
     text-transform: uppercase;
     background-color: rgba($white, 0.3);
     display: table;
+    font-weight: 400;
     .choice-inner {
       display: table-cell;
       vertical-align: middle;
@@ -59,4 +60,8 @@ p {
   background-color: rgba($white, 0.6);
   border: 3px solid #C21629;
   color: #C21629;
+}
+
+.planet-table {
+  font-weight: 300;
 }
