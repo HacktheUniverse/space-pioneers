@@ -22,6 +22,7 @@ class WelcomeController < ApplicationController
 
 
       @tweet = {
+        letter: choice_letter.downcase,
         choice: choice_num,
         handle: tweet.user.screen_name
       }

@@ -6,9 +6,12 @@ console.log "hello?"
 $(".game-container").fullpage({
   slideSpeed: 1000
   afterLoad: (a, i)->
+    window.nextTurn()
     current = $('.section.active .question').data('id')
     console.log current
-    getChoice( current )
+    setTimeout (->
+      getChoice( current )
+    ), 10000
 
   # afterRender: function(){},
   # afterResize: function(){},
@@ -47,17 +50,15 @@ $(".planet-choices .action-buttons").find(".btn").on "click", () ->
 window.getChoice = (event_id) ->
   $.get "/choices/#{event_id}", (choice) ->
 
+    $(".choice").hide()
+    $(".choice-#{choice.letter}").show()
+
     # Execute the function for the corresponding choice
     window.chooseEffect(choice.choice)
 
     window.updateConditions()
 
-    setTimeout (->
-      window.nextTurn()
-    ), 5000
-
-    # TODO: put in user handle
-    console.log choice.handle
+    alert "@#{choice.handle}"
 
 window.updateConditions = ->
   $('#conditions-dashboard span').each ->
