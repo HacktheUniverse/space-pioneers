@@ -4,7 +4,13 @@
 
 console.log "hello?"
 $(".game-container").fullpage({
-  slideSpeed: 1000;
+  slideSpeed: 1000
+  afterLoad: (a, i)->
+    console.log i
+  # afterRender: function(){},
+  # afterResize: function(){},
+  # afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+  # onSlideLeave: function(anchorLink, index, slideIndex, direction){}
 })
 $(".header-intro h1").fitText(1)
 $(".header-intro h1").fitText(1)

@@ -49,7 +49,7 @@ $planet-colors: #a1a1a1, #f5cc96, #495391,#b95730, #d5ba8e, #dab37a, #c4eaed, #6
       background: nth($planet-colors, $i);
       height: nth($planet-diameter, $i)+rem;
       // margin-left:  nth($planet-diameter, $i)*$half;
-      top:  nth($planet-diameter, $i)*$half;
+      // top:  nth($planet-diameter, $i)*$half;
       width: nth($planet-diameter, $i)+rem;
     }
   }
