@@ -29,12 +29,12 @@ window.nextTurn = ->
 window.lose = (condition) ->
   switch condition
     when 'mutiny'
-      console.log 'mutiny'
+      console.log 'A significant group of people plot a mutiny, hijacking the ship and redirecting it back to Earth. This is a failed attempt. You lose.'
     when 'physical_health'
-      console.log 'physical_health'
+      console.log 'The crew has been exposed to extreme radiation and they develop cancer. Their bodies are unable to repair the damage, the population dwindles. You lose.'
     when 'mental_health'
-      console.log 'mental_health'
+      console.log 'The daily stress of space life has taken its toll. Depression is wide spread and the population dwindles. You lose.'
     when 'food'
-      console.log 'food'
+      console.log 'The sustainable food source has been contaminated by bacteria. You quickly run out of food and lose.'
     when 'parts'
-      console.log 'parts'
+      console.log 'There are no more parts to repair and maintain the ship. You lose.'
