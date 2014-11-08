@@ -12,7 +12,7 @@ effects = {
   effect_1: {
     text: "You start out with an extra 200 food, however you consume food 5% more rapidly."
     result: ->
-      window.inventory.food = window.inventory.food + 200
+      window.conditions.food = window.conditions.food + 200
       window.conditions.food_consume_rate = window.conditions.food_consume_rate * 1.05
   }
   effect_2: {
@@ -23,7 +23,7 @@ effects = {
   effect_3: {
     text: "You loose 1 spare part for repairs."
     result: ->
-      window.inventory.parts = window.inventory.parts - 1
+      window.conditions.parts = window.conditions.parts - 1
   }
   effect_4: {
     text: null
@@ -62,7 +62,7 @@ effects = {
   effect_10: {
     text: "You push the ship past its physical limits causing damage that must be repaired.  You need parts to fix the damage."
     result: ->
-      window.inventory.parts = window.inventory.parts - 1
+      window.conditions.parts = window.conditions.parts - 1
   }
 }
 
