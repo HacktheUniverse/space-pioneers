@@ -11,7 +11,7 @@ $(".game-container").fullpage({
     console.log current
     setTimeout (->
       getChoice( current )
-    ), 15000
+    ), 20000
 
   # afterRender: function(){},
   # afterResize: function(){},
