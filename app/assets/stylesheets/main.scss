@@ -18,11 +18,11 @@ h1 {
 
 p {
   font-family: $gentium;
+  font-style: italic;
 }
 
 .question {
   font-style: italic;
-  // font-size: 45px;
   font-size: 12px;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -35,6 +35,7 @@ p {
 
   .choice {
     width: 43%;
+    height: 200px;
     float: left;
     padding-left: 2%;
     padding-right: 2%;
@@ -43,7 +44,11 @@ p {
     border: 2px solid #fff;
     text-transform: uppercase;
     background-color: rgba($white, 0.3);
-
+    display: table;
+    .choice-inner {
+      display: table-cell;
+      vertical-align: middle;
+    }
     & + .choice {
       margin-left: 2%;
     }

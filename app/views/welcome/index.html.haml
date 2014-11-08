@@ -1,14 +1,15 @@
-%header.intro
-  %h1 Space Trail
-  %p Loosely based on the original Oregon trail
 .game-container
-  - @events.each do | i |
-    %section.section.q-1
+  %section.section.header-intro
+    %h1{ data: {shadow_text: "Space Trail" } } Space Trail
+    %p Loosely based on the original Oregon trail
+    .planet
+      %div
+  - @events.each_with_index do | event, i |
+    %section.section{ class: "q-#{i}", data: { height: "#{500*i}"} }
       .question
-        #{i.body}
+        #{event.body}
       .answer-box
-        .choice.choice-a.is-selected
-          #{i.choice_1}
+        .choice.choice-a
+          .choice-inner #{event.choice_1}
         .choice.choice-b
-          #{i.choice_2}
-          
+          .choice-inner #{event.choice_2}

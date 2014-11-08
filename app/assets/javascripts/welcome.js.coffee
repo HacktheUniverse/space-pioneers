@@ -3,9 +3,12 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 console.log "hello?"
-$(".game-container").fullpage()
+$(".game-container").fullpage({
+  slideSpeed: 1000;
+})
+$(".header-intro h1").fitText(1)
 $(".question").fitText(4.2)
-$(".choice").fitText(3.0)
+$(".choice").fitText(2.0)
 
 # Call this method passing in an event id, and it will the most recent
 # tweet directed at @_spacepioneer that has a hashtag corresponding to the event.
