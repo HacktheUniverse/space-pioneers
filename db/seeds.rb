@@ -96,3 +96,9 @@ end
 #   e.choice_2 = "Keep pushing through and see if you can make it to your final destination without running out of resources."
 #   e.choice_2_effect = 22
 # end
+
+
+planets_path = Rails.root.join('db', 'seeds', 'planets.yml')
+YAML.load_file(planets_path).each do |params|
+  Planet.create(params)
+end

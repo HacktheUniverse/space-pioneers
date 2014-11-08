@@ -1,32 +1,32 @@
--
-  name: GJ 667C c
-  planet_class: M-Warm Superterran
-  habitable_class: M
-  ly_distance: 23.6
-  esi: 0.84
+# -
+#   name: GJ 667C c
+#   planet_class: M-Warm Superterran
+#   habitable_class: M
+#   ly_distance: 23.6
+#   esi: 0.84
 -
   name: Kepler-62 e
   planet_class: K-Warm Superterran
   habitable_class: M
-  ly_distance: 1199.7 
+  ly_distance: 1199.7
   esi: 0.83
--
-  name: GJ 832 c
-  planet_class: M-Warm Superterran
-  habitable_class: M
-  ly_distance: 16.1
-  esi: 0.81
+# -
+#   name: GJ 832 c
+#   planet_class: M-Warm Superterran
+#   habitable_class: M
+#   ly_distance: 16.1
+#   esi: 0.81
 -
   name: Kepler-283 c
-  planet_class: K-Warm Superterran 
+  planet_class: K-Warm Superterran
   habitable_class: M
-  ly_distance: 1740.8 
+  ly_distance: 1740.8
   esi: 0.79
 -
-  name: tau Cet e*
+  name: tau Cet e
   planet_class: G-Warm Superterran
   habitable_class: M
-  ly_distance: 11.9 
+  ly_distance: 11.9
   esi: 0.78
 -
   name: Kepler-296 f
@@ -35,20 +35,20 @@
   ly_distance: 1691.9
   esi: 0.78
 -
-  name: GJ 180 c*
+  name: GJ 180 c
   planet_class: M-Warm Superterran
   habitable_class: M
   ly_distance: 38.1
   esi: 0.77
 -
   name: GJ 667C f
-  planet_class: M-Warm Superterran 
+  planet_class: M-Warm Superterran
   habitable_class: P
   ly_distance: 23.6
   esi: 0.77
 -
-  name: GJ 180 b*
-  planet_class: M-Warm Superterran 
+  name: GJ 180 b
+  planet_class: M-Warm Superterran
   habitable_class: M
   ly_distance: 38.1
   esi: 0.75
@@ -62,7 +62,7 @@
   name: HD 40307 g
   planet_class: K-Warm Superterran
   habitable_class: P
-  ly_distance: 41.7 
+  ly_distance: 41.7
   esi: 0.74
 -
   name: Kepler-61 b
@@ -77,8 +77,8 @@
   ly_distance: 619.4
   esi: 0.71
 -
-  name: GJ 422 b*
-  planet_class: M-Warm Superterran 
+  name: GJ 422 b
+  planet_class: M-Warm Superterran
   habitable_class: M
   ly_distance: 41.3
   esi: 0.71
@@ -90,7 +90,7 @@
   esi: 0.68
 -
   name: Kapteyn's b
-  planet_class: d-Warm Superterran 
+  planet_class: d-Warm Superterran
   habitable_class: P
   ly_distance: 12.7
   esi: 0.67
@@ -109,7 +109,7 @@
 -
   name: Kepler-174 d
   planet_class: K-Warm Superterran
-  habitable_class: P 
+  habitable_class: P
   ly_distance: 1173.6
   esi: 0.61
 -
@@ -119,7 +119,7 @@
   ly_distance: 23.6
   esi: 0.60
 -
-  name: GJ 682 c*
+  name: GJ 682 c
   planet_class: M-Warm Superterran
   habitable_class: P
   ly_distance: 16.6
