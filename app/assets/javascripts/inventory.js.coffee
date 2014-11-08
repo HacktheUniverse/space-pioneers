@@ -1,9 +1,6 @@
-window.inventory = {
-  food: 2000,
-  parts: 5
-}
-
 window.conditions = {
+  food: 2000,
+  parts: 5,
   physical_health: 100,
   mental_health: 100,
   food_consume_rate: 10,
