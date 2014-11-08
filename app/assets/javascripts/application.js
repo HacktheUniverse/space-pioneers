@@ -18,3 +18,4 @@
 //= require jquery.easing
 //= require welcome
 //= require effects
+//= require inventory

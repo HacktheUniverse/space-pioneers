@@ -10,7 +10,9 @@ window.chooseEffect = (effect_num) ->
 effects = {
   effect_1: {
     text: "You start out with an extra 200 food, however you consume food 5% more rapidly."
-    result: -> console.log 'effect 1'
+    result: ->
+      window.inventory.food = window.inventory.food + 200
+      window.conditions.food_consume_rate = window.conditions.food_consume_rate * 1.05
   }
   effect_2: {
     text: "Your decision to create a sustainable biosphere reduces food consumption by 10%."
