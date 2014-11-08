@@ -16,6 +16,7 @@
 //= require fittext
 //= require jquery.fullpage
 //= require jquery.easing
+//= require jBox.min
 //= require welcome
 //= require effects
 //= require inventory

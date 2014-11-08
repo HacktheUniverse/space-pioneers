@@ -1,11 +1,11 @@
 .game-container
   / %section.section.header-intro
   /   %h1{ data: {shadow_text: "Space Trail" } } Space Trail
-  /   %p Loosely based on the original Oregon trail
+  /   %p (Very) Loosely based on the original Oregon trail
   /   .planet
   /     %div
   %section.section.planet-table
-    = render "planets"
+    = render "planet_v1"
   - @events.each_with_index do | event, i |
     %section.section{ class: "q-#{i}", data: { height: "#{500*i}"} }
       .question

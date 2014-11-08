@@ -19,6 +19,7 @@ h1 {
 p {
   font-family: $gentium;
   font-style: italic;
+  font-size: 25px;
 }
 
 .question {
@@ -62,6 +63,32 @@ p {
   color: #C21629;
 }
 
+table {
+  border-spacing: 0;
+  border-color: transparent
+}
 .planet-table {
+  table { width: 100%; }
   font-weight: 300;
+  td { padding: 10px; }
+  thead {
+    font-weight: bold;
+  };
+
+  tbody {
+    tr {
+      @include transition( all 0.3s );
+      &:hover {
+        background-color: rgba(#fff, 0.3);
+      }
+    }
+  }
+}
+.planet-name {
+  text-align: left;
+}
+
+.planet-table {
+  h2 { color: rgba(#fff, 0.8); }
+
 }

@@ -4,13 +4,19 @@
       %td Name
       %td Planetary Class
       %td Habitable Class
-      %td Distance from Earth in Light-Years
-      %td Earth Similarity Index (Earth is 1.0)
+      %td
+        Distance from Earth
+        %br
+        in Light-Years
+      %td
+        Earth Similarity Index
+        %br
+        (Earth is 1.0)
 
   %tbody
     - Planet.order(:esi).each do |planet|
       %tr
-        %td= planet.name
+        %td.planet-name= planet.name
         %td= planet.planet_class
         %td= planet.habitable_class
         %td= planet.ly_distance

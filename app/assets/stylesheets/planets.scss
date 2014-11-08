@@ -1,0 +1,110 @@
+@import "compass";
+$planet-names: mercury, venus, earth, mars, saturn, uranus, neptune;
+
+$planet-diameter: 0.4878, 1.2104, 1.2760, 0.6787, 3.8400 , 1.9500, 1.8120, 1.7530;
+
+//days devided by 100
+
+$planet-colors: #a1a1a1, #f5cc96, #495391,#b95730, #d5ba8e, #dab37a, #c4eaed, #6393e5;
+
+.a-planet {
+  transition: 1s transform ease-in-out;
+
+  .the-planet {
+
+    &:after {
+      box-shadow: inset 0 0.4rem 0.8rem rgba(black,0.2), inset 0 -0.4rem 0.4rem rgba(white,0.2);
+      border-radius: 50%;
+      box-shadow: inset 0 0.4rem 0.8rem rgba(black,0.2), inset 0 -0.4rem 0.4rem rgba(white,0.2);
+      content: '';
+      height: 3em;
+      margin-left: -1.5em;
+      position: absolute;
+      top: -1.5em;
+      cursor: pointer;
+      width: 3em;
+    }
+  }
+}
+
+.planet-choices {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+@for $i from 1 through 8 {
+  .planet-#{$i}{
+    height: $i * 15rem;
+    width: $i * 15rem;
+    .the-planet {background: nth($planet-colors, $i);}
+
+    position: absolute;
+
+    $half: -0.5rem;
+    top: 10 + nth($planet-diameter, $i)*$half;
+
+    .the-planet:after {
+      background: nth($planet-colors, $i);
+      height: nth($planet-diameter, $i)+rem;
+      // margin-left:  nth($planet-diameter, $i)*$half;
+      top:  nth($planet-diameter, $i)*$half;
+      width: nth($planet-diameter, $i)+rem;
+    }
+  }
+}
+
+.tooltip-content {
+  display: none;
+}
+
+.jBox-wrapper {
+  color: #090a0f;
+
+  strong {
+    font-weight: bold;
+  }
+  .jBox-content {
+    line-height: 2.2;
+    padding: 25px !important;
+  }
+}
+
+.btn {
+  border-radius: 5px;
+  border: 2px solid darken(gray, 20%);
+  padding: 10px;
+  background-color: gray;
+  cursor: hand;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+
+  &.choose {
+    border-color: darken(rgb(98, 163, 98), 20%);
+    background-color: rgb(98, 163, 98);
+    &:hover {
+      @include transition(all 0.3 );
+      background-color: darken(rgb(98, 163, 98), 20%);
+    }
+  }
+  &.cancel:hover {
+    background-color: darken(gray, 20%);
+  }
+
+  & + .btn {
+    margin-top: 10px;
+  }
+}
+
+.jBox-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1b2735;
+}
+
+
+

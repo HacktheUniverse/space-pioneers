@@ -1,0 +1,23 @@
+%h2 Carefully choose a planet to colonize:
+
+.planet-choices
+  - Planet.order(:esi).each_with_index do | planet, i |
+    .a-a-planet.has-tooltip{ id: "planet-#{i}", data: { title: "Planet Name: #{planet.name}", content: "#{planet.planet_class}"}}
+      %span.tooltip-content
+        .planet-habit
+          %strong Habitable Class:
+          = planet.habitable_class
+        .planet-distance
+          %strong Distance from the Earth:
+          = planet.ly_distance
+        .planet-esi
+          %strong Earth Similarity Index:
+          %br
+            %em (Earth is 1.0)
+          = planet.esi
+        .action-buttons
+          .choose.btn Start Game!
+          .cancel.btn Cancel
+
+      .a-planet{ class: "planet-#{i}"}
+        .the-planet

@@ -7,9 +7,25 @@ $(".game-container").fullpage({
   slideSpeed: 1000;
 })
 $(".header-intro h1").fitText(1)
+$(".header-intro h1").fitText(1)
 $(".question").fitText(4.2)
 $(".choice").fitText(2.0)
+$(".planet-table").fitText(3.0)
+$(".a-a-planet").each (i) ->
+  $(@).jBox 'Modal',
+      getTitle: "data-title",
+      target: $(".planet-choices")
+      position: {
+        x: "center",
+        y: "center"
+      }
+      outside: "x"
+      animation: "slide"
+      content: $(@).find(".tooltip-content")
 
+$(".planet-choices .action-buttons").find(".btn").on "click", () ->
+  console.log @
+  $(".jBox-closeButton").trigger "click"
 # Call this method passing in an event id, and it will the most recent
 # tweet directed at @_spacepioneer that has a hashtag corresponding to the event.
 # For example, say there are the following tweets created:
