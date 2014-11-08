@@ -17,3 +17,4 @@
 //= require jquery.fullpage
 //= require jquery.easing
 //= require welcome
+//= require effects
