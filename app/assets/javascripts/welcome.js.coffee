@@ -19,7 +19,7 @@ $(".game-container").fullpage({
   # onSlideLeave: function(anchorLink, index, slideIndex, direction){}
 })
 $(".header-intro h1").fitText(1)
-$(".header-intro h1").fitText(1)
+$(".header-intro p").fitText(2)
 $(".question").fitText(4.2)
 $(".choice").fitText(2.0)
 $(".planet-table").fitText(3.0)
@@ -36,7 +36,6 @@ $(".a-a-planet").each (i) ->
       content: $(@).find(".tooltip-content")
 
 $(".planet-choices .action-buttons").find(".btn").on "click", () ->
-  console.log @
   $(".jBox-closeButton").trigger "click"
 
 

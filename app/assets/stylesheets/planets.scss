@@ -9,6 +9,7 @@ $planet-colors: #a1a1a1, #f5cc96, #495391,#b95730, #d5ba8e, #dab37a, #c4eaed, #6
 
 .a-planet {
   transition: 1s transform ease-in-out;
+  z-index: 2;
 
   .the-planet {
 
