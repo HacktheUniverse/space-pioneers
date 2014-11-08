@@ -1,147 +1,126 @@
 -
-       GJ 667C c  M-Warm Superterran       M    3.80    1.54    28.1    23.6    247.    286.  0.84
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 667C c
+  planet_class: M-Warm Superterran
+  habitable_class: M
+  ly_distance: 23.6
+  esi: 0.84
 -
-     Kepler-62 e  K-Warm Superterran       M    4.54    1.61   122.4  1199.7    261.    302.  0.83
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-62 e
+  planet_class: K-Warm Superterran
+  habitable_class: M
+  ly_distance: 1199.7 
+  esi: 0.83
 -
-        GJ 832 c  M-Warm Superterran       M    5.40    1.69    35.7    16.1    253.    295.  0.81
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 832 c
+  planet_class: M-Warm Superterran
+  habitable_class: M
+  ly_distance: 16.1
+  esi: 0.81
 -
-    Kepler-283 c  K-Warm Superterran       M    7.04    1.81    92.7  1740.8    248.    291.  0.79
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-283 c
+  planet_class: K-Warm Superterran 
+  habitable_class: M
+  ly_distance: 1740.8 
+  esi: 0.79
 -
-      tau Cet e*  G-Warm Superterran       M    4.29    1.59   168.1    11.9    282.    323.  0.78
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: tau Cet e*
+  planet_class: G-Warm Superterran
+  habitable_class: M
+  ly_distance: 11.9 
+  esi: 0.78
 -
-    Kepler-296 f  K-Warm Superterran       M    6.72    1.79    63.3  1691.9    273.    316.  0.78
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-296 f
+  planet_class: K-Warm Superterran
+  habitable_class: M
+  ly_distance: 1691.9
+  esi: 0.78
 -
-       GJ 180 c*  M-Warm Superterran       M    6.40    1.77    24.3    38.1    239.    282.  0.77
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 180 c*
+  planet_class: M-Warm Superterran
+  habitable_class: M
+  ly_distance: 38.1
+  esi: 0.77
 -
-       GJ 667C f  M-Warm Superterran       P    2.70    1.40    39.0    23.6    221.    259.  0.77
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 667C f
+  planet_class: M-Warm Superterran 
+  habitable_class: P
+  ly_distance: 23.6
+  esi: 0.77
 -
-       GJ 180 b*  M-Warm Superterran       M    8.30    1.89    17.4    38.1    268.    312.  0.75
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 180 b*
+  planet_class: M-Warm Superterran 
+  habitable_class: M
+  ly_distance: 38.1
+  esi: 0.75
 -
-        GJ 163 c  M-Warm Superterran       M    7.26    1.83    25.6    48.9    277.    320.  0.75
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 163 c
+  planet_class: M-Warm Superterran
+  habitable_class: M
+  ly_distance: 48.9
+  esi: 0.75
 -
-      HD 40307 g  K-Warm Superterran       P    7.09    1.82   197.8    41.7    227.    270.  0.74
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: HD 40307 g
+  planet_class: K-Warm Superterran
+  habitable_class: P
+  ly_distance: 41.7 
+  esi: 0.74
 -
-     Kepler-61 b  K-Warm Superterran       M   13.85    2.15    59.9  1062.8    267.    314.  0.73
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-61 b
+  planet_class: K-Warm Superterran
+  habitable_class: M
+  ly_distance: 1062.8
+  esi: 0.73
 -
-     Kepler-22 b  G-Warm Superterran       M   20.36    2.35   289.9   619.4    261.    310.  0.71
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-22 b
+  planet_class: G-Warm Superterran
+  habitable_class: M
+  ly_distance: 619.4
+  esi: 0.71
 -
-       GJ 422 b*  M-Warm Superterran       M    9.90    1.98    26.2    41.3    231.    276.  0.71
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 422 b*
+  planet_class: M-Warm Superterran 
+  habitable_class: M
+  ly_distance: 41.3
+  esi: 0.71
 -
-    Kepler-298 d  K-Warm Superterran       M   26.81    2.50    77.5  1545.2    271.    322.  0.68
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-298 d
+  planet_class: K-Warm Superterran
+  habitable_class: M
+  ly_distance: 1545.2
+  esi: 0.68
 -
-     Kapteyn's b  d-Warm Superterran       P    4.80    1.64    48.6    12.7    205.    246.  0.67
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kapteyn's b
+  planet_class: d-Warm Superterran 
+  habitable_class: P
+  ly_distance: 12.7
+  esi: 0.67
 -
-     Kepler-62 f  K-Warm Superterran       P    2.81    1.41   267.3  1199.7    201.    240.  0.67
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-62 f
+  planet_class: K-Warm Superterran
+  habitable_class: P
+  ly_distance: 1199.7
+  esi: 0.67
 -
-    Kepler-186 f       K-Warm Terran       P    1.23    1.11   129.9   492.3    192.    227.  0.64
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-186 f
+  planet_class: K-Warm Terran
+  habitable_class: P
+  ly_distance: 492.3
+  esi: 0.64
 -
-    Kepler-174 d  K-Warm Superterran       P   14.78    2.18   247.4  1173.6    206.    253.  0.61
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: Kepler-174 d
+  planet_class: K-Warm Superterran
+  habitable_class: P 
+  ly_distance: 1173.6
+  esi: 0.61
 -
-       GJ 667C e  M-Warm Superterran       P    2.70    1.40    62.2    23.6    189.    227.  0.60
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 667C e
+  planet_class: M-Warm Superterran
+  habitable_class: P
+  ly_distance: 23.6
+  esi: 0.60
 -
-       GJ 682 c*  M-Warm Superterran       P    8.70    1.92    57.3    16.6    198.    242.  0.59
-  name:
-  planet_class:
-  habitable_class:
-  ly_distance:
-  esi:
+  name: GJ 682 c*
+  planet_class: M-Warm Superterran
+  habitable_class: P
+  ly_distance: 16.6
+  esi: 0.59
