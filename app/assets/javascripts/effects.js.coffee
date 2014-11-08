@@ -1,11 +1,10 @@
-window.chooseEffect = (effect_num) ->
+window.chooseEffect = (effect_num, container) ->
   effect = effects["effect_#{effect_num}"]
 
   # Execute this function to update game state
   effect.result()
 
-  # TODO: Insert this text into dom
-  console.log effect.text
+  container.append("<p>#{effect.text}</p>")
 
 
 effects = {

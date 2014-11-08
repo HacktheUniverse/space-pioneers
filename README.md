@@ -3,6 +3,8 @@ space-trail
 
 [http://damp-chamber-4364.herokuapp.com/](http://damp-chamber-4364.herokuapp.com/)
 
+# Education category
+
 ### Description
 Space Trail is like Oregon Trail... but in space.
 

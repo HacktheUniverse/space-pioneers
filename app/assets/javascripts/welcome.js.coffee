@@ -11,7 +11,7 @@ $(".game-container").fullpage({
     console.log current
     setTimeout (->
       getChoice( current )
-    ), 10000
+    ), 15000
 
   # afterRender: function(){},
   # afterResize: function(){},
@@ -50,15 +50,20 @@ $(".planet-choices .action-buttons").find(".btn").on "click", () ->
 window.getChoice = (event_id) ->
   $.get "/choices/#{event_id}", (choice) ->
 
-    $(".choice").hide()
-    $(".choice-#{choice.letter}").show()
+    other_letter = switch choice.letter
+      when "b" then "a"
+      when "a" then "b"
+
+    wrong_choice = $('.section.active').find(".choice-#{other_letter}")
+    wrong_choice.addClass('is-wrong-choice')
+    wrong_choice.find('.choice-inner').fadeOut()
+    wrong_choice.text("@#{choice.handle}")
 
     # Execute the function for the corresponding choice
-    window.chooseEffect(choice.choice)
+    window.chooseEffect(choice.choice, wrong_choice)
 
     window.updateConditions()
 
-    alert "@#{choice.handle}"
 
 window.updateConditions = ->
   $('#conditions-dashboard span').each ->

@@ -13,7 +13,15 @@ class WelcomeController < ApplicationController
       # end
 
       event_id = params[:event_id]
-      tweet = TwitterClient.search("@_spacepioneer ##{event_id}", result_type: "recent").first
+      tweets = TwitterClient.search("@_spacepioneer ##{event_id}", result_type: "recent")
+      puts '----------------'
+      tweets.each do |t|
+        puts t.user.screen_name
+        puts t.text
+        puts ''
+      end
+      puts '----------------'
+      tweet =tweets.first
       choice_letter = tweet.hashtags.first.text
       choice_num = case choice_letter.downcase
                    when 'a' then (event_id.to_i * 2) - 1
