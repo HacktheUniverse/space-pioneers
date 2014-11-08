@@ -90,5 +90,29 @@ table {
 
 .planet-table {
   h2 { color: rgba(#fff, 0.8); }
+}
 
+#conditions-dashboard {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(#2A458D, 0.3);
+  border: 2px solid #2A458D;
+
+  p {
+    display: inline-block;
+    width: 90px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'open sans';
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    & + p {
+      margin-left: 15px;
+    }
+
+    span:first-of-type {
+      font-weight: bold;
+    }
+  }
 }
