@@ -12,7 +12,13 @@
       .question
         #{event.body}
       .answer-box
+
         .choice.choice-a
-          .choice-inner #{event.choice_1}
+          .choice-inner
+            #{event.choice_1}
+            %span.tweet-text @_spacepioneer ##{event.id} #a
+
         .choice.choice-b
-          .choice-inner #{event.choice_2}
+          .choice-inner
+            #{event.choice_2}
+            %span.tweet-text @_spacepioneer ##{event.id} #b
