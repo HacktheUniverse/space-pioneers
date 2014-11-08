@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108062332) do
+ActiveRecord::Schema.define(version: 20141108151140) do
 
   create_table "events", force: true do |t|
     t.string   "title"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20141108062332) do
     t.string   "choice_2"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "choice_1_effect"
+    t.integer  "choice_2_effect"
   end
 
 end
