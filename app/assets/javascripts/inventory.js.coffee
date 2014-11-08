@@ -7,5 +7,6 @@ window.inventory = {
 
 window.conditions = {
   food_consume_rate: 10,
-
+  mutiny_rate: 10,
 }
+
