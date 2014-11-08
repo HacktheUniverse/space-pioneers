@@ -108,3 +108,13 @@ $planet-colors: #a1a1a1, #f5cc96, #495391,#b95730, #d5ba8e, #dab37a, #c4eaed, #6
 
 
 
+#ship {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -50px;
+  background: url('https://dl.dropboxusercontent.com/u/82861970/BoreDOM_IMG/space-ship.png') no-repeat 50% 50%;
+  z-index: 1000;
+}

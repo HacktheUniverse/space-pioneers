@@ -6,7 +6,10 @@ console.log "hello?"
 $(".game-container").fullpage({
   slideSpeed: 1000
   afterLoad: (a, i)->
-    console.log i
+    current = $('.section.active .question').data('id')
+    console.log current
+    getChoice( current )
+
   # afterRender: function(){},
   # afterResize: function(){},
   # afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
@@ -61,7 +64,7 @@ window.updateConditions = ->
     $(this).text(window.conditions[this.id])
 
 
-$('body').keyup (e) ->
-  if e.keyCode == 32
-    window.getChoice $('.section.active .question').data('id')
+# $('body').keyup (e) ->
+#   if e.keyCode == 32
+#     window.getChoice $('.section.active .question').data('id')
 
