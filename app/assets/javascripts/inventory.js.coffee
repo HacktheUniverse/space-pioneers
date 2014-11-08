@@ -12,3 +12,4 @@ window.conditions = {
   mutiny_rate: .02
 }
 
+window.updateConditions()

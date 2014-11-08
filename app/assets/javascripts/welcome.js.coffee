@@ -33,4 +33,5 @@ window.getChoice = (event_id) ->
     console.log choice.handle
 
 window.updateConditions = ->
-  # TODO: update the dom with new conditions / inventory
+  $('#conditions-dashboard span').each ->
+    $(this).text(window.conditions[this.id])
