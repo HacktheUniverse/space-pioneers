@@ -32,6 +32,8 @@ $(".a-a-planet").each (i) ->
 $(".planet-choices .action-buttons").find(".btn").on "click", () ->
   console.log @
   $(".jBox-closeButton").trigger "click"
+
+
 # Call this method passing in an event id, and it will the most recent
 # tweet directed at @_spacepioneer that has a hashtag corresponding to the event.
 # For example, say there are the following tweets created:
@@ -57,3 +59,9 @@ window.getChoice = (event_id) ->
 window.updateConditions = ->
   $('#conditions-dashboard span').each ->
     $(this).text(window.conditions[this.id])
+
+
+$('body').keyup (e) ->
+  if e.keyCode == 32
+    window.getChoice $('.section.active .question').data('id')
+

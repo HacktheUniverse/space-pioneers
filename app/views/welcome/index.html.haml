@@ -9,7 +9,7 @@
     = render "planet_v1"
   - @events.each_with_index do | event, i |
     %section.section{ class: "q-#{i}", data: { height: "#{500*i}"} }
-      .question
+      .question{ data: { id: "#{event.id}" }}
         #{event.body}
       .answer-box
 
