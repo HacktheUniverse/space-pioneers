@@ -7,7 +7,7 @@ class WelcomeController < ApplicationController
       @tweets = twitter_client.search("@_spacepioneer ##{params[:event_id]}", result_type: "recent").take(5).map do |t|
         {
           choice: t.hashtags.first.text,
-          handle: t.user.name
+          handle: t.user.screen_name
         }
       end
 
