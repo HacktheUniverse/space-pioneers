@@ -8,7 +8,7 @@
       %td Earth Similarity Index (Earth is 1.0)
 
   %tbody
-    - Planet.all.each do |planet|
+    - Planet.order(:esi).each do |planet|
       %tr
         %td= planet.name
         %td= planet.planet_class
