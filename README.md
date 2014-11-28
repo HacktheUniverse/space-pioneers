@@ -3,6 +3,8 @@ space-trail
 
 [http://damp-chamber-4364.herokuapp.com/](http://damp-chamber-4364.herokuapp.com/)
 
+Demo from Hack the Universe presentation: http://youtu.be/QnCP1ZKy1oY?list=UUIuhq9LTleLC-GMdAOvvZcg
+
 # Education category
 
 ### Description
